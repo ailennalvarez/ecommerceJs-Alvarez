@@ -29,12 +29,12 @@ productosIphone.push(new Productos("Iphone X",3000,"rojo"));
 productosIphone.push(new Productos("Iphone XS",4000,"negro"));
 
 //mostrar productos 
-let buscar = prompt("¿que desea comprar?");
-if (buscar == "Iphone"|| buscar == "IPHONE"|| buscar=="iphone"){
+let buscar = prompt("¿que desea comprar?").toUpperCase;
+if (buscar =="iphone"){
         for (const obj of productosIphone){
             console.log("El modelo de iphone es " + obj.modelo + " y el precio es $" + obj.sumaIva() + " en color " + obj.color);
         }
-}else if (buscar == "Samsung"|| buscar == "SAMSUNG"|| buscar=="samsung"){
+}else if (buscar=="samsung"){
     for (const obj of productosSamgung){
         console.log("El modelo de Samsung es " + obj.modelo + " y el precio es $" + obj.sumaIva() + " en color " + obj.color);
     }
