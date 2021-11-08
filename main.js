@@ -30,7 +30,7 @@ productosIphone.push(new Productos("Iphone X",3000,"rojo"));
 productosIphone.push(new Productos("Iphone XS",4000,"negro"));
 
 //mostrar productos 
-let buscar = prompt("¿que desea comprar?").toUpperCase;
+let buscar = prompt("¿que desea comprar?").toLocaleLowerCase();
 if (buscar =="iphone"){
         for (const obj of productosIphone){
             console.log("El modelo de iphone es " + obj.modelo + " y el precio es $" + obj.sumaIva() + " en color " + obj.color);
