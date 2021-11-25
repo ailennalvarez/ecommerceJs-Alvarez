@@ -101,7 +101,18 @@ const checkEmail = () => {
     }
     return valido;
 }
-mail.onchange = ()=> {
+/*mail.onchange = ()=> {
     checkEmail();
-}
+}*/
+let misDatos ={
+    usuario,
+    mail,
 
+};
+//AJAX ENVIO FORMULARIO CON EXITO
+const URL ="http://127.0.0.1:5501/contacto.html";
+$("#datosPost").on("click", function(){
+    $.post(URL,misDatos,function(){
+        alert("Datos enviados correctamente");
+    })
+});

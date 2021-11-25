@@ -46,7 +46,9 @@ header{
 }
 
  .mimenu{
-    background-color:#F29985 ;}
+    background-color:#F29985;
+    margin: 0%;
+}
 .mitexto{
     text-transform: uppercase;
            
@@ -56,4 +58,17 @@ header{
 .miItem{
     font-weight: bold;
     font-size: medium;
+}
+#misProductos{
+    background-color:#F29544 ;
+}
+
+/*.miStock{
+    background-color:#F29544 ;
+    margin: 1%;
+    width: 18rem;
+}*/
+#miBoton{
+    background-color: #F2C849;
+    border-color: bisque;
 }
